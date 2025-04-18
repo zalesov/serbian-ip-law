@@ -15,8 +15,10 @@
       border-bottom: 1px solid #e5e5e5;
     }
     header .nav-link {
-      color: #2f2f2f;
-      font-weight: 500;
+  color: #914852;
+  font-weight: 500;
+}
+
     }
     header .nav-link:hover {
       color: #8b1f2f;
@@ -50,38 +52,53 @@
       color: #4a4a4a;
     }
     @media (max-width: 768px) {
-      header .container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      header nav {
-        width: 100%;
-        margin-top: 10px;
-      }
-      header nav ul {
-        flex-direction: column;
-        gap: 5px;
-      }
-      header nav .nav-link {
-        padding-left: 0;
-      }
-    }
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header nav {
+    width: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  header nav .nav-link {
+    padding: 0.25rem 0;
+    text-align: center;
+  }
+  header a.d-flex {
+    justify-content: center;
+    width: auto;
+  }
+}
+
   </style>
 </head>
 <body>
   <!-- Header -->
   <header class="py-3">
     <div class="container d-flex flex-wrap align-items-center justify-content-between">
-      <a href="https://azalesov.com">
-        <img src="/mnt/data/logo_small.png" alt="A.Zalesov & Partners Logo" style="height: 60px; max-width: 100%;">
+      <a href="https://azalesov.com" class="d-flex align-items-center text-decoration-none">
+        <img src="logo_small.png" alt="Site Icon" style="height: 48px; max-width: 100%;">
+        <span class="ms-2 fw-semibold text-dark">A. Zalesov & Partners</span>
       </a>
       <nav class="ms-auto">
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/en/about-us/">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/en/team/">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/en/services/">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/en/news/">News</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <ul class="nav align-items-center gap-2">
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/">EN</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="https://azalesov.ru//">RU</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/company/credentials-and-press/">Press</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/company/team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/company/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/news">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/contacts">Contacts</a></li>
         </ul>
       </nav>
     </div>
@@ -89,84 +106,82 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
-      <img src="/mnt/data/slide2.jpg" alt="Gear Illustration" style="max-width: 300px; height: auto;">
-      <div class="text-white text-start">
-        <h1 class="display-6">INTELLECTUAL PROPERTY from A to Z</h1>
-        <p class="lead">«A.Zalesov & Partners» Patent & Law Firm is a full-service IP law firm based in Moscow and Belgrade incorporating patent attorneys’ company and attorneys-at-law bureau. We are carefully dealing with any IP issues businesses might encounter in Russia and the neighboring countries.</p>
-      </div>
-      <h1 class="display-5">Intellectual Property from A to Z</h1>
-      <p class="lead">Protecting ideas, innovations, and brands in Serbia and beyond</p>
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+    <img src="slide2.jpg" alt="Gear Illustration" style="max-width: 300px; height: auto;">
+    <div class="text-white text-start">
+      <h1 class="display-6">INTELEKTUALNA SVOJINA od A do Š</h1>
+      <p class="lead">«A.Zalesov & Partners» je punopravna advokatska kancelarija za intelektualnu svojinu sa sedištima u Moskvi i Beogradu, koja objedinjuje patentne zastupnike i advokate. Pažljivo se bavimo svim pitanjima intelektualne svojine sa kojima se preduzeća mogu suočiti u Rusiji i susednim zemljama.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Services Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="section-title text-center">Our Services</h2>
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card h-100 text-center border-0 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Patent Disputes</h5>
-              <p class="card-text">Representation in complex patent litigations and enforcement procedures.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card h-100 text-center border-0 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">PCT Applications</h5>
-              <p class="card-text">International patent application filing through the PCT system.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card h-100 text-center border-0 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Trademark Registration</h5>
-              <p class="card-text">Full-cycle trademark services including searches, filing, and defense.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card h-100 text-center border-0 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Unfair Competition</h5>
-              <p class="card-text">Legal support in cases of unfair market practices and IP abuse.</p>
-            </div>
-          </div>
+<!-- Team Section -->
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="section-title">Naš tim</h2>
+    <img src="Team.jpg" alt="Team Photo" class="img-fluid mb-4" style="max-width: 1000px; width: 100%; height: auto;">
+    <p class="text-muted mx-auto" style="max-width: 1000px;">
+      «A.Zalesov & Partners» Patent & Law Firm je punopravna advokatska kancelarija koja pruža pravne savete u oblasti intelektualne svojine, zastupa u sporovima (patenti, žigovi i dizajni) i pruža usluge podnošenja prijava za patente, dizajne i žigove pred Ruskim zavodom za intelektualnu svojinu i Evroazijskim patentnim zavodom. Održavamo portfelje patenata i žigova međunarodnih klijenata (uključujući Madridski i Haški sistem) u Rusiji i susednim zemljama, uključujući zemlje Evroazijske carinske i ekonomske unije. Dvadeset godina iskustva u vođenju sporova omogućava nam da pružimo proverene praktične savete o zaštiti, osporavanju i sprovođenju prava intelektualne svojine.
+    </p>
+  </div>
+</section>
+
+<!-- Services | Advantages | Recommendations -->
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="p-4" style="background-color: #f4f4f9; height: 100%;">
+          <h3 class="text-danger">Usluge</h3>
+          <ul class="list-unstyled text-start mt-3">
+            <li>• PCT prijava u Rusiji</li>
+            <li>• Poništenje patenta u Rusiji</li>
+            <li>• Povreda patenta u Rusiji</li>
+            <li>• Nelojalna konkurencija u Rusiji</li>
+          </ul>
         </div>
       </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4" style="background-color: #edf0f5; height: 100%;">
+          <h3 class="text-danger">Prednosti</h3>
+          <ul class="list-unstyled text-start mt-3">
+            <li>• Highly professional and experienced <span class="text-danger">team</span></li>
+            <li>• High personal <span class="text-danger">success rates</span> in IP disputes</li>
+            <li>• <span class="text-danger">Compliance</span> and professional ethics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="p-4" style="background-color: #ececec; height: 100%;">
+          <h3 class="text-danger">Preporuke</h3>
+          <p class="text-start mt-3">
+            Našu kancelariju preporučuju renomirane publikacije kao što su: IAM Patent 1000, WTR 1000, IP Stars, Best Lawyers, Pravo300, WIPR Leaders.
+          </p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <h2 class="section-title text-center">About Us</h2>
-      <p class="text-center">A.Zalesov & Partners Serbia is a branch of the renowned Russian IP law firm "A.Zalesov & Partners". Our Belgrade team delivers high-quality legal services in intellectual property law tailored for the Serbian and regional market.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
+<!-- Team Section -->
+<!-- Contact Section -->
   <section class="py-5" id="contact">
     <div class="container">
-      <h2 class="section-title text-center">Contact Us</h2>
+      <h2 class="section-title text-center">Kontaktirajte nas</h2>
       <form action="https://formspree.io/f/moqgrbdy" method="POST" class="mx-auto" style="max-width: 600px;">
         <div class="mb-3">
-          <label for="name" class="form-label">Your Name</label>
+          <label for="name" class="form-label">Vaše ime</label>
           <input type="text" class="form-control" name="name" id="name" required>
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email Address</label>
+          <label for="email" class="form-label">Email adresa</label>
           <input type="email" class="form-control" name="email" id="email" required>
         </div>
         <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
+          <label for="message" class="form-label">Poruka</label>
           <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit" class="btn btn-primary">Pošalji poruku</button>
       </form>
     </div>
   </section>
@@ -176,7 +191,7 @@
     <div class="container text-center">
       <p class="mb-1">Terazije 29, 5th floor, apt. 18, 11000 Belgrade, Republic of Serbia</p>
       <p class="mb-1">Email: office@azalesov.com</p>
-      <p>&copy; 2025 A.Zalesov & Partners Serbia. All rights reserved.</p>
+      <p>&copy; 2025 A.Zalesov & Partners Srbija. Sva prava zadržana.</p>
     </div>
   </footer>
 
