@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.Zalesov & Partners Serbia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    header .nav-link {
+      color: #2f2f2f;
+      font-weight: 500;
+    }
+    header .nav-link:hover {
+      color: #8b1f2f;
+      text-decoration: underline;
+    }
+    .hero {
+      background-color: #9a7b5f;
+      padding: 4rem 0;
+      text-align: center;
+    }
+    .hero h1 {
+      color: #ffffff;
+      font-weight: 500;
+    }
+    .hero p {
+      color: #ffffff;
+    }
+    .section-title {
+      color: #2f2f2f;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    .card-title {
+      color: #8b1f2f;
+    }
+    .card-text {
+      color: #4a4a4a;
+    }
+    footer {
+      background-color: #f6f8fb;
+      color: #4a4a4a;
+    }
+    @media (max-width: 768px) {
+      header .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header nav {
+        width: 100%;
+        margin-top: 10px;
+      }
+      header nav ul {
+        flex-direction: column;
+        gap: 5px;
+      }
+      header nav .nav-link {
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="py-3">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <a href="https://azalesov.com">
+        <img src="/mnt/data/logo_small.png" alt="A.Zalesov & Partners Logo" style="height: 60px; max-width: 100%;">
+      </a>
+      <nav class="ms-auto">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/en/about-us/">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/en/team/">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/en/services/">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://azalesov.com/en/news/">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+      <img src="/mnt/data/slide2.jpg" alt="Gear Illustration" style="max-width: 300px; height: auto;">
+      <div class="text-white text-start">
+        <h1 class="display-6">INTELLECTUAL PROPERTY from A to Z</h1>
+        <p class="lead">«A.Zalesov & Partners» Patent & Law Firm is a full-service IP law firm based in Moscow and Belgrade incorporating patent attorneys’ company and attorneys-at-law bureau. We are carefully dealing with any IP issues businesses might encounter in Russia and the neighboring countries.</p>
+      </div>
+      <h1 class="display-5">Intellectual Property from A to Z</h1>
+      <p class="lead">Protecting ideas, innovations, and brands in Serbia and beyond</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Our Services</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Patent Disputes</h5>
+              <p class="card-text">Representation in complex patent litigations and enforcement procedures.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">PCT Applications</h5>
+              <p class="card-text">International patent application filing through the PCT system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Trademark Registration</h5>
+              <p class="card-text">Full-cycle trademark services including searches, filing, and defense.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Unfair Competition</h5>
+              <p class="card-text">Legal support in cases of unfair market practices and IP abuse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="section-title text-center">About Us</h2>
+      <p class="text-center">A.Zalesov & Partners Serbia is a branch of the renowned Russian IP law firm "A.Zalesov & Partners". Our Belgrade team delivers high-quality legal services in intellectual property law tailored for the Serbian and regional market.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Us</h2>
+      <form action="https://formspree.io/f/moqgrbdy" method="POST" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" name="name" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" name="email" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container text-center">
+      <p class="mb-1">Terazije 29, 5th floor, apt. 18, 11000 Belgrade, Republic of Serbia</p>
+      <p class="mb-1">Email: office@azalesov.com</p>
+      <p>&copy; 2025 A.Zalesov & Partners Serbia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
